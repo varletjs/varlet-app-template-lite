@@ -93,8 +93,8 @@ pnpm format
 
 ### 感谢贡献者们做出的努力
 
-<a href="https://github.com/varletjs/varlet-app-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=varletjs/varlet-app-template" />
+<a href="https://github.com/varletjs/varlet-app-template-lite/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=varletjs/varlet-app-template-lite" />
 </a>
 
 ### 感谢以下赞助者

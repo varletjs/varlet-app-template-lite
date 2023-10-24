@@ -93,8 +93,8 @@ We recommend that `issue` be used for problem feedback, or others:
 
 ### Thanks to contributors
 
-<a href="https://github.com/varletjs/varlet-app-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=varletjs/varlet-app-template" />
+<a href="https://github.com/varletjs/varlet-app-template-lite/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=varletjs/varlet-app-template-lite" />
 </a>
 
 ### Thanks to the following sponsors
