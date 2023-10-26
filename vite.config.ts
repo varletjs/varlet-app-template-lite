@@ -1,4 +1,5 @@
 import vue from '@vitejs/plugin-vue'
+import jsx from '@vitejs/plugin-vue-jsx'
 import autoImport from 'unplugin-auto-import/vite'
 import components from 'unplugin-vue-components/vite'
 import pages from 'vite-plugin-pages'
@@ -44,6 +45,8 @@ export default defineConfig(() => {
           }
         }
       }),
+
+      jsx(),
 
       components({
         resolvers: [VarletUIResolver()]
