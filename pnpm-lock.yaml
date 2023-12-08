@@ -6,17 +6,17 @@ settings:
 
 dependencies:
   '@varlet/axle':
-    specifier: ^0.2.1
-    version: 0.2.1
+    specifier: 0.2.16
+    version: 0.2.16(vue@3.3.4)
   '@varlet/touch-emulator':
-    specifier: ^2.18.2
-    version: 2.18.2
+    specifier: ^2.20.0
+    version: 2.20.0
   '@varlet/ui':
-    specifier: ^2.18.2
-    version: 2.18.2(vue@3.3.4)
+    specifier: ^2.20.0
+    version: 2.20.0(vue@3.3.4)
   '@varlet/use':
-    specifier: ^2.18.2
-    version: 2.18.2(vue@3.3.4)
+    specifier: ^2.20.0
+    version: 2.20.0(vue@3.3.4)
   dayjs:
     specifier: ^1.11.8
     version: 1.11.8
@@ -90,7 +90,7 @@ devDependencies:
     version: 5.0.2
   unocss:
     specifier: ^0.55.6
-    version: 0.55.6(postcss@8.4.31)(vite@4.3.9)
+    version: 0.55.6(postcss@8.4.32)(vite@4.3.9)
   unplugin-auto-import:
     specifier: ^0.16.4
     version: 0.16.4
@@ -1261,7 +1261,7 @@ packages:
       sirv: 2.0.3
     dev: true
 
-  /@unocss/postcss@0.55.6(postcss@8.4.31):
+  /@unocss/postcss@0.55.6(postcss@8.4.32):
     resolution: {integrity: sha512-7/+nBNLGN0okZPfxCR115b5EQunWrtjyEC0nRS9/Ls5u8fwwkq05X5qUeqDLzVR/iSpQpk+4Ij9cKjsMD540ig==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1272,7 +1272,7 @@ packages:
       css-tree: 2.3.1
       fast-glob: 3.3.1
       magic-string: 0.30.3
-      postcss: 8.4.31
+      postcss: 8.4.32
     dev: true
 
   /@unocss/preset-attributify@0.55.6:
@@ -1398,53 +1398,53 @@ packages:
       - rollup
     dev: true
 
-  /@varlet/axle@0.2.1:
-    resolution: {integrity: sha512-fiFQsj6v+eo463CKM0uWnoAM/guyTiXzyVt5eJR5fPAlQSPKfB48g8WGFWm+KVSYB0rvGQzV6iB8Y5qUQY890A==}
+  /@varlet/axle@0.2.16(vue@3.3.4):
+    resolution: {integrity: sha512-Jx4RYq1+WIbqU32ISL1KJHeC437BdpSlfvuJR0mUPDs/teO0GFfRPVulpJb4pA+IqE/6M3MiErqYYbdMM6azwA==}
     engines: {pnpm: '>=8.0'}
+    peerDependencies:
+      vue: ^3.2.0
     dependencies:
-      '@varlet/shared': 2.16.5
-      axios: 1.4.0
+      '@varlet/shared': 2.20.0
+      axios: 1.6.2
+      minimatch: 9.0.3
       qs: 6.11.2
+      vue: 3.3.4
     transitivePeerDependencies:
       - debug
     dev: false
 
-  /@varlet/icons@2.18.2:
-    resolution: {integrity: sha512-vbrbmPPxv+A/HuMcxmWR4OeFpU/HOdLmt0Hqw7x0wxI9eMirgMVDnbrzGNnh+paiHFZGX77EFvRdNzScbuH1Aw==}
+  /@varlet/icons@2.20.0:
+    resolution: {integrity: sha512-cRH+tfu0FhPQnEuVyCgny1Hr4FB4FsvpBhY/U3OvvZT+Yf5AQFKCUADHE9EUSI6EZD3/kHph5F850QdMj+PLSA==}
     dev: false
 
-  /@varlet/shared@2.16.5:
-    resolution: {integrity: sha512-DrfrTqWmDMlRFUTQiGk2wJVWd5Pzi5eE1/bVJOOq6p6MrAeW6y2Ohtrtaz+ohCQf4EU0dQTmtICEVBFoHGJfEw==}
+  /@varlet/shared@2.20.0:
+    resolution: {integrity: sha512-VobWP3Q2OcL6jpsr76MsSW9QcduiX28HRJrUiPSt/SLaMGtaj/oKGiP7XgkbPsWkJzeITzWgCQJEdu/Pvl8YyQ==}
     dev: false
 
-  /@varlet/shared@2.18.2:
-    resolution: {integrity: sha512-jRpuhrxdaFZnAQTahZO0dCp+v/s2ybq7auZYIwRzem7QKCuZN+jaMoUZ7CxUDbZ7Q94CAi9W3o6I2Rd36ZtW0w==}
+  /@varlet/touch-emulator@2.20.0:
+    resolution: {integrity: sha512-MFvwfwZMPXMCEXhhA438ZYrhTYvC5+9ijmDRW+yp+Npq/CxKjcAdkQ+q6vPhqcPO0Mexe0VD7rjiRHX1fiNejA==}
     dev: false
 
-  /@varlet/touch-emulator@2.18.2:
-    resolution: {integrity: sha512-+veFELwPfbPyHKRdI6X3STb7YJBVNbV1dm5qcAEt/wvgu+HYnofDsEhcgS5NR95fz6PlCFUZLKhU1qhQDesPnw==}
-    dev: false
-
-  /@varlet/ui@2.18.2(vue@3.3.4):
-    resolution: {integrity: sha512-4baFuuiKSyox3OLBKlwZD1VZxpW87n693FSYguqnJ+GDALnpkvf6HK33IsLYz98juIPrL5prQhzM3OVBhYVsyg==}
+  /@varlet/ui@2.20.0(vue@3.3.4):
+    resolution: {integrity: sha512-q19K5rhXKeSLw9ZtoOrEfh1aCUS7tYqM1fe5qSq5DPICgx8+qRqDMKvOu6oOX2gAGAdUTiPE3MCVbaIXhs4qDQ==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.8
-      '@varlet/icons': 2.18.2
-      '@varlet/shared': 2.18.2
-      '@varlet/use': 2.18.2(vue@3.3.4)
+      '@varlet/icons': 2.20.0
+      '@varlet/shared': 2.20.0
+      '@varlet/use': 2.20.0(vue@3.3.4)
       dayjs: 1.11.8
       decimal.js: 10.4.3
       vue: 3.3.4
     dev: false
 
-  /@varlet/use@2.18.2(vue@3.3.4):
-    resolution: {integrity: sha512-NpC4aoCgbQfrv8UAArrtMWFyGA9WqV/f5Lc093njXqwNcfb8QDDXLtfLv5a8vYFW4vlKcOV0Z2jSmgVoMWOr2w==}
+  /@varlet/use@2.20.0(vue@3.3.4):
+    resolution: {integrity: sha512-kj3LBVteq0Fl2v7ZDvGo79Ti+I7IW0bTnJ/sL6Sy/mPztcuzLzvF3AQyaGV73M+VDKzcDWD0aE5ghEecdlZ/Gg==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
-      '@varlet/shared': 2.18.2
+      '@varlet/shared': 2.20.0
       vue: 3.3.4
     dev: false
 
@@ -1797,10 +1797,10 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /axios@1.4.0:
-    resolution: {integrity: sha512-S4XCWMEmzvo64T9GfvQDOXgYRDJ/wsSZc7Jvdgx5u1sd0JwsuPLqb3SYmusag+edF6ziyMensPVqLTSc1PiSEA==}
+  /axios@1.6.2:
+    resolution: {integrity: sha512-7i24Ri4pmDRfJTR7LDBhsOTtcm+9kjX5WiY1X3wIisx6G9So3pfMkEiU7emUBe46oceVImccTEM3k6C5dbVW8A==}
     dependencies:
-      follow-redirects: 1.15.2
+      follow-redirects: 1.15.3
       form-data: 4.0.0
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -1809,7 +1809,6 @@ packages:
 
   /balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
-    dev: true
 
   /binary-extensions@2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
@@ -1831,7 +1830,6 @@ packages:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
     dependencies:
       balanced-match: 1.0.2
-    dev: true
 
   /braces@3.0.2:
     resolution: {integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==}
@@ -2772,8 +2770,8 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
-  /follow-redirects@1.15.2:
-    resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==}
+  /follow-redirects@1.15.3:
+    resolution: {integrity: sha512-1VzOtuEM8pC9SFU1E+8KfTjZyMztRsgEfwQl44z8A25uy13jSzTj6dyK2Df52iV0vgHCfBwLhDWevLn95w5v6Q==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -3678,6 +3676,13 @@ packages:
       brace-expansion: 2.0.1
     dev: true
 
+  /minimatch@9.0.3:
+    resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    dependencies:
+      brace-expansion: 2.0.1
+    dev: false
+
   /minimist-options@4.1.0:
     resolution: {integrity: sha512-Q4r8ghd80yhO/0j1O3B2BjweX3fiHg9cdOwjJd2J76Q135c+NDxGCqdYKQ1SKBuFfgWbAUzBfvYjPUEeNgqN1A==}
     engines: {node: '>= 6'}
@@ -3730,6 +3735,12 @@ packages:
     resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+
+  /nanoid@3.3.7:
+    resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+    dev: true
 
   /natural-compare-lite@1.4.0:
     resolution: {integrity: sha512-Tj+HTDSJJKaZnfiuw+iaF9skdPpTo2GtEly5JHnWV/hfv2Qj/9RKsGISQtLh2ox3l5EAGw487hnBee0sIJ6v2g==}
@@ -4047,11 +4058,11 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
-  /postcss@8.4.31:
-    resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
+  /postcss@8.4.32:
+    resolution: {integrity: sha512-D/kj5JNu6oo2EIy+XL/26JEDTlIbB8hw85G8StOE6L74RQAVVP5rej6wxCNqyMbR4RkPfqvezVbPw81Ngd6Kcw==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanoid: 3.3.6
+      nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: true
@@ -4749,7 +4760,7 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unocss@0.55.6(postcss@8.4.31)(vite@4.3.9):
+  /unocss@0.55.6(postcss@8.4.32)(vite@4.3.9):
     resolution: {integrity: sha512-Wg1pWeWleb/U6cpL0R1CjbyQVKkFpxygPwQYfvUAAg2BP5ocXrw2TLURY/giMXHPUWzZfChdJFBs4XSVHe+3aQ==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -4765,7 +4776,7 @@ packages:
       '@unocss/cli': 0.55.6
       '@unocss/core': 0.55.6
       '@unocss/extractor-arbitrary-variants': 0.55.6
-      '@unocss/postcss': 0.55.6(postcss@8.4.31)
+      '@unocss/postcss': 0.55.6(postcss@8.4.32)
       '@unocss/preset-attributify': 0.55.6
       '@unocss/preset-icons': 0.55.6
       '@unocss/preset-mini': 0.55.6
