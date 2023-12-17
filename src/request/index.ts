@@ -4,8 +4,8 @@ import { createUseAxle } from '@varlet/axle/use'
 
 const axle = createAxle()
 
-axle.axios.interceptors.response.use(
-  (response) => {
+axle.useResponseInterceptor({
+  onFulfilled(response) {
     const { code, message } = response.data
 
     if (code !== 200 && message) {
@@ -14,11 +14,12 @@ axle.axios.interceptors.response.use(
 
     return response.data
   },
-  (error) => {
+
+  onRejected(error) {
     Snackbar.error(error.message)
     return Promise.reject(error)
   }
-)
+})
 
 const useAxle = createUseAxle({
   axle,
