@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@varlet/axle':
-    specifier: ^0.3.1
-    version: 0.3.1(vue@3.3.4)
+    specifier: ^0.3.2
+    version: 0.3.2(vue@3.3.4)
   '@varlet/touch-emulator':
     specifier: ^2.20.2
     version: 2.20.2
@@ -1402,8 +1402,8 @@ packages:
       - rollup
     dev: true
 
-  /@varlet/axle@0.3.1(vue@3.3.4):
-    resolution: {integrity: sha512-3MJ9PoAvOIcqARwFUXfoVVLaR6cjz/6qdaxmRWbVWVgH56w/84iTxK/CsHqNPlI2Rbj8bSWbdEnGhgDwfKUmRA==}
+  /@varlet/axle@0.3.2(vue@3.3.4):
+    resolution: {integrity: sha512-UAdRdCuwHq8aIcODYCCzzk7/gbhgKLczGRzu6AI4Xoy6AbHTsKLFWF+vsKNTkWeDK18JmYYlbobLBusMeKLNEg==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
