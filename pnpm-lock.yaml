@@ -6,17 +6,17 @@ settings:
 
 dependencies:
   '@varlet/axle':
-    specifier: ^0.3.2
-    version: 0.3.2(vue@3.3.4)
+    specifier: ^0.3.4
+    version: 0.3.4(vue@3.3.4)
   '@varlet/touch-emulator':
-    specifier: ^2.20.2
-    version: 2.20.2
+    specifier: ^2.20.3
+    version: 2.20.3
   '@varlet/ui':
-    specifier: ^2.20.2
-    version: 2.20.2(vue@3.3.4)
+    specifier: ^2.20.3
+    version: 2.20.3(vue@3.3.4)
   '@varlet/use':
-    specifier: ^2.20.2
-    version: 2.20.2(vue@3.3.4)
+    specifier: ^2.20.3
+    version: 2.20.3(vue@3.3.4)
   dayjs:
     specifier: ^1.11.8
     version: 1.11.8
@@ -1026,10 +1026,6 @@ packages:
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
     dev: true
 
-  /@types/crypto-js@4.2.1:
-    resolution: {integrity: sha512-FSPGd9+OcSok3RsM0UZ/9fcvMOXJ1ENE/ZbLfOPlBWj7BgXtEAM8VYfTtT760GiLbQIMoVozwVuisjvsVwqYWw==}
-    dev: false
-
   /@types/debug@4.1.8:
     resolution: {integrity: sha512-/vPO1EPOs306Cvhwv7KfVfYvOJqA/S/AXjaHQiJboCZzcNDb+TIJFN9/2C9DZ//ijSKWioNyUxD792QmDJ+HKQ==}
     dependencies:
@@ -1402,16 +1398,15 @@ packages:
       - rollup
     dev: true
 
-  /@varlet/axle@0.3.2(vue@3.3.4):
-    resolution: {integrity: sha512-UAdRdCuwHq8aIcODYCCzzk7/gbhgKLczGRzu6AI4Xoy6AbHTsKLFWF+vsKNTkWeDK18JmYYlbobLBusMeKLNEg==}
+  /@varlet/axle@0.3.4(vue@3.3.4):
+    resolution: {integrity: sha512-6SJysH3/klm8C4bWQ2W08L9EJMd28cHRDm63NiJdRd6R0O2OA4HVdYej6C0ybm8f2jmuVkqRH2iJeHjhjqGOtA==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
-      '@types/crypto-js': 4.2.1
-      '@varlet/shared': 2.20.2
+      '@varlet/shared': 2.20.3
       axios: 1.6.2
       crypto-js: 4.2.0
-      lodash-es: 4.17.21
+      lodash: 4.17.21
       minimatch: 9.0.3
       qs: 6.11.2
       vue: 3.3.4
@@ -1419,38 +1414,38 @@ packages:
       - debug
     dev: false
 
-  /@varlet/icons@2.20.2:
-    resolution: {integrity: sha512-lO6Q+Qz3LGtSRin1GY0KocG9RIvhpEkw0wdB5WEwYOl4U+OV4rtsk7ZMBH/LTDU87UUlYBzrQf4UC1Kp3WxBLA==}
+  /@varlet/icons@2.20.3:
+    resolution: {integrity: sha512-eX01LErRxAHf+sXNdBXOnP41I6orG957XfDpwQFdGfgl9Ud9YW8A6Dnr78Q3meumqhQ1uBHJoNzRpJdd1HtRiA==}
     dev: false
 
-  /@varlet/shared@2.20.2:
-    resolution: {integrity: sha512-kwM2q1JPR0P8IHSbkahjDAb2ULoUX6wpL3sXOt0OnNCtZZlYvTtza142WpDjbVtdyd/mfmmW7hrG+7OX907gYA==}
+  /@varlet/shared@2.20.3:
+    resolution: {integrity: sha512-MgLDRYfrGgKqu8Vg2kfRVRGRZE2d8CH0f75vph5h4AG+Clm+A7FgUZLaVTriMWuS6wXrrrceSgX5kNmb/lFShQ==}
     dev: false
 
-  /@varlet/touch-emulator@2.20.2:
-    resolution: {integrity: sha512-3mFC4UpVsjkDagqcrbKj44ZPiEywmvJxXWwDV0gQNuqe2OmcfSIi8NLFqGW7yE3nEDiR57W0BgyaIVfPy/ZJWg==}
+  /@varlet/touch-emulator@2.20.3:
+    resolution: {integrity: sha512-NnxVOe++NZdakuNP/voXxcmO8E4dTOiceeXwkdcumTV0Jk12QnwoMCAKFlfQa+XNRg98U3X2zjYNC/jiEWlXmA==}
     dev: false
 
-  /@varlet/ui@2.20.2(vue@3.3.4):
-    resolution: {integrity: sha512-Dbg7qKIk4WAgCa4YcA3eXIGN17gMLYHMy+RytjRuYVvJIfwWbtrvYbNy3TK+0/PFY0QmJh3OYBwudeTistxdig==}
+  /@varlet/ui@2.20.3(vue@3.3.4):
+    resolution: {integrity: sha512-ZWI6G8dMGwpFSaHIdsI391BAd9QztdBitEpxG3ympDiUm3Lx7VJ4s+BV6/OaN1rROLp0lWjS5AUDndazgzrBdQ==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.8
-      '@varlet/icons': 2.20.2
-      '@varlet/shared': 2.20.2
-      '@varlet/use': 2.20.2(vue@3.3.4)
+      '@varlet/icons': 2.20.3
+      '@varlet/shared': 2.20.3
+      '@varlet/use': 2.20.3(vue@3.3.4)
       dayjs: 1.11.8
       decimal.js: 10.4.3
       vue: 3.3.4
     dev: false
 
-  /@varlet/use@2.20.2(vue@3.3.4):
-    resolution: {integrity: sha512-E8u7Pee4av6r610OtUufGowGOiWFvtK/jbh28P824670bxGpTL+4QgRVI+PF8ypsqGe+4DjdYr1f3jcW27i+Iw==}
+  /@varlet/use@2.20.3(vue@3.3.4):
+    resolution: {integrity: sha512-9k6DVxPPhJvRjPwgnWShxVonAyHezVQpI5IIIrX0Tv51t2Hc4Oe5+t0mLW4+trXdPNiqCn6fRDP+f0P8B+a+sg==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
-      '@varlet/shared': 2.20.2
+      '@varlet/shared': 2.20.3
       vue: 3.3.4
     dev: false
 
@@ -3494,10 +3489,6 @@ packages:
       p-locate: 5.0.0
     dev: true
 
-  /lodash-es@4.17.21:
-    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
-    dev: false
-
   /lodash.camelcase@4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
     dev: true
@@ -3540,7 +3531,6 @@ packages:
 
   /lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /log-update@4.0.0:
     resolution: {integrity: sha512-9fkkDevMefjg0mmzWFBW8YkFP91OrizzkW3diF7CpG+S2EYdy4+TVfGwz1zeF8x7hCx1ovSPTOE9Ngib74qqUg==}
