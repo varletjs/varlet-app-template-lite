@@ -10,64 +10,60 @@ import { fileURLToPath, URL } from 'node:url'
 import { VarletUIResolver } from 'unplugin-vue-components/resolvers'
 import { defineConfig } from 'vite'
 
-export default defineConfig(() => {
-  return {
-    base: './',
+export default defineConfig({
+  base: './',
 
-    lintOnSave: false,
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
+  },
 
-    resolve: {
-      alias: {
-        '@': fileURLToPath(new URL('./src', import.meta.url))
-      }
-    },
+  server: {
+    host: '0.0.0.0',
+    port: 10087
+  },
 
-    server: {
-      host: '0.0.0.0',
-      port: 10087
-    },
+  build: {
+    target: ['ios12']
+  },
 
-    build: {
-      target: ['ios12']
-    },
-
-    plugins: [
-      vue({
-        template: {
-          transformAssetUrls: {
-            img: ['src'],
-            video: ['src'],
-            audio: ['src'],
-            'var-image': ['src'],
-            'var-avatar': ['src'],
-            'var-card': ['src'],
-            'var-app-bar': ['image']
-          }
+  plugins: [
+    vue({
+      template: {
+        transformAssetUrls: {
+          img: ['src'],
+          video: ['src'],
+          audio: ['src'],
+          'var-image': ['src'],
+          'var-avatar': ['src'],
+          'var-card': ['src'],
+          'var-app-bar': ['image']
         }
-      }),
+      }
+    }),
 
-      jsx(),
+    jsx(),
 
-      components({
-        resolvers: [VarletUIResolver()]
-      }),
+    components({
+      resolvers: [VarletUIResolver()]
+    }),
 
-      autoImport({
-        imports: ['vue', 'vue-router', 'pinia', 'vue-i18n'],
-        resolvers: [VarletUIResolver({ autoImport: true })],
-        eslintrc: { enabled: true }
-      }),
+    autoImport({
+      imports: ['vue', 'vue-router', 'pinia', 'vue-i18n'],
+      resolvers: [VarletUIResolver({ autoImport: true })],
+      eslintrc: { enabled: true }
+    }),
 
-      pages(),
+    pages(),
 
-      compression({
-        include: [/\.html$/, /\.css$/, /\.js$/, /\.ttf$/],
-        skipIfLargerOrEqual: true
-      }),
+    compression({
+      include: [/\.html$/, /\.css$/, /\.js$/, /\.ttf$/],
+      skipIfLargerOrEqual: true
+    }),
 
-      progress(),
+    progress(),
 
-      unoCSS()
-    ]
-  }
+    unoCSS()
+  ]
 })
