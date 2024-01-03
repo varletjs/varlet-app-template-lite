@@ -13,7 +13,7 @@
     "lint": "eslint . --fix",
     "format": "prettier --write .",
     "type-check": "vue-tsc --noEmit",
-    "bump": "pnpm update @varlet/touch-emulator @varlet/ui @varlet/use @varlet/axle"
+    "bump": "pnpm update @varlet/touch-emulator @varlet/ui @varlet/use @varlet/axle --latest"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged --allow-empty --concurrent false",
@@ -24,7 +24,7 @@
     "*.{vue,ts,tsx,js,jsx}": "pnpm lint"
   },
   "dependencies": {
-    "@varlet/axle": "^0.4.0",
+    "@varlet/axle": "^0.5.2",
     "@varlet/touch-emulator": "^2.20.5",
     "@varlet/ui": "^2.20.5",
     "@varlet/use": "^2.20.5",
