@@ -25,9 +25,9 @@
   },
   "dependencies": {
     "@varlet/axle": "^0.6.0",
-    "@varlet/touch-emulator": "^2.21.0",
-    "@varlet/ui": "^2.21.0",
-    "@varlet/use": "^2.21.0",
+    "@varlet/touch-emulator": "^2.22.2",
+    "@varlet/ui": "^2.22.2",
+    "@varlet/use": "^2.22.2",
     "dayjs": "^1.11.8",
     "pinia": "^2.1.3",
     "vue": "^3.4.0",
