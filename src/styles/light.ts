@@ -1,6 +1,6 @@
 import { Themes } from '@varlet/ui'
 
-export const darkTheme = {
+export const lightTheme = {
   // varlet
-  ...Themes.md3Dark
+  ...Themes.md3Light
 }
