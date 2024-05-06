@@ -2,7 +2,7 @@ import vue from '@vitejs/plugin-vue'
 import jsx from '@vitejs/plugin-vue-jsx'
 import autoImport from 'unplugin-auto-import/vite'
 import components from 'unplugin-vue-components/vite'
-import pages from 'vite-plugin-pages'
+import vueRouter from 'unplugin-vue-router/vite'
 import unoCSS from 'unocss/vite'
 import { fileURLToPath, URL } from 'node:url'
 import { VarletImportResolver } from '@varlet/import-resolver'
@@ -41,6 +41,10 @@ export default defineConfig({
       }
     }),
 
+    vueRouter({
+      exclude: ['**/components/**', '**/use/**']
+    }),
+
     jsx(),
 
     components({
@@ -52,8 +56,6 @@ export default defineConfig({
       resolvers: [VarletImportResolver({ autoImport: true })],
       eslintrc: { enabled: true }
     }),
-
-    pages(),
 
     unoCSS()
   ]

@@ -1,4 +1,4 @@
-import routes from '~pages'
+import { routes } from 'vue-router/auto-routes'
 import { createRouter, createWebHashHistory, Router } from 'vue-router'
 
 const router: Router = createRouter({
