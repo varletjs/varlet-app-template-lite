@@ -10,6 +10,8 @@ interface ImportMeta {
   readonly env: ImportMetaEnv
 }
 
+declare module 'virtual-icons' {}
+
 declare module 'vue' {
   interface ComponentCustomProperties {
     $dayjs: typeof dayjs

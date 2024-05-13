@@ -7,6 +7,7 @@ import dayjs from 'dayjs'
 import '@/styles/common.less'
 import '@varlet/touch-emulator'
 import 'virtual:uno.css'
+import 'virtual-icons'
 
 const app = createApp(App)
 

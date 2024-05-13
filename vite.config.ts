@@ -3,6 +3,7 @@ import jsx from '@vitejs/plugin-vue-jsx'
 import autoImport from 'unplugin-auto-import/vite'
 import components from 'unplugin-vue-components/vite'
 import vueRouter from 'unplugin-vue-router/vite'
+import icon from '@varlet/unplugin-icon-builder/vite'
 import unoCSS from 'unocss/vite'
 import { fileURLToPath, URL } from 'node:url'
 import { VarletImportResolver } from '@varlet/import-resolver'
@@ -46,6 +47,8 @@ export default defineConfig({
     }),
 
     jsx(),
+
+    icon({ dir: 'src/assets/icons' }),
 
     components({
       resolvers: [VarletImportResolver()]
