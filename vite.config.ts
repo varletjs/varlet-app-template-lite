@@ -48,7 +48,7 @@ export default defineConfig({
 
     jsx(),
 
-    icon({ dir: 'src/assets/icons' }),
+    icon({ dir: 'src/assets/icons', onDemand: true }),
 
     components({
       resolvers: [VarletImportResolver()]
