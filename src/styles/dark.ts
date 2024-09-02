@@ -1,6 +1,6 @@
 import { Themes } from '@varlet/ui'
 
-export const darkTheme = Themes.toViewport({
+export const darkTheme = {
   // varlet
   ...Themes.md3Dark,
   '--hsl-secondary': 'var(--hsl-inverse-surface)',
@@ -9,4 +9,4 @@ export const darkTheme = Themes.toViewport({
   '--color-tertiary': 'hsla(var(--hsl-tertiary), 1)',
   '--hsl-muted': '264, 5%, 58%',
   '--color-muted': 'hsla(var(--hsl-muted), 1)'
-})
+}
