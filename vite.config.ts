@@ -4,6 +4,7 @@ import autoImport from 'unplugin-auto-import/vite'
 import components from 'unplugin-vue-components/vite'
 import vueRouter from 'unplugin-vue-router/vite'
 import icon from '@varlet/unplugin-icon-builder/vite'
+import layouts from 'vite-plugin-vue-layouts'
 import unoCSS from 'unocss/vite'
 import { fileURLToPath, URL } from 'node:url'
 import { VarletImportResolver } from '@varlet/import-resolver'
@@ -42,8 +43,10 @@ export default defineConfig({
       }
     }),
 
+    layouts(),
+
     vueRouter({
-      exclude: ['**/components/**', '**/use/**']
+      exclude: ['**/components/**', '**/composables/**', '**/lib/**']
     }),
 
     jsx(),
@@ -56,8 +59,9 @@ export default defineConfig({
 
     autoImport({
       imports: ['vue', 'vue-router', 'pinia', 'vue-i18n'],
-      resolvers: [VarletImportResolver({ autoImport: true })],
-      eslintrc: { enabled: true }
+      dirs: ['./src/composables', './src/stores'],
+      eslintrc: { enabled: true },
+      resolvers: [VarletImportResolver({ autoImport: true })]
     }),
 
     unoCSS()

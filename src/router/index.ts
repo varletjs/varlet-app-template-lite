@@ -1,4 +1,5 @@
 import { routes } from 'vue-router/auto-routes'
+import { setupLayouts } from 'virtual:generated-layouts'
 import { createRouter, createWebHashHistory, Router } from 'vue-router'
 
 const router: Router = createRouter({
@@ -6,9 +7,9 @@ const router: Router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: '/layout'
+      redirect: '/home'
     },
-    ...routes
+    ...setupLayouts(routes)
   ]
 })
 
