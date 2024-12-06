@@ -1,1 +1,0 @@
-import{y as r,P as s,M as a,h as _}from"./index-BmByO34H.js";const i=(t,o)=>{const e=t.__vccOpts||t;for(const[n,c]of o)e[n]=c;return e},f={},l={class:"container flex min-h-screen justify-center items-center mx-auto"};function m(t,o){const e=a("router-view");return _(),r("div",l,[s(e)])}const d=i(f,[["render",m]]);export{d as default};
