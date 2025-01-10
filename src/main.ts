@@ -1,9 +1,8 @@
-import App from './App.vue'
-import router from '@/router'
-import { createPinia } from 'pinia'
 import { createApp } from 'vue'
 import dayjs from 'dayjs'
-
+import { createPinia } from 'pinia'
+import router from '@/router'
+import App from './App.vue'
 import '@/styles/common.less'
 import '@varlet/touch-emulator'
 import 'virtual:uno.css'
