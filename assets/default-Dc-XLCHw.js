@@ -1,1 +1,0 @@
-import{c as r,a as s,r as a,o as _}from"./index-CUOokXcP.js";const i=(t,o)=>{const e=t.__vccOpts||t;for(const[c,n]of o)e[c]=n;return e},f={},l={class:"container mx-auto flex min-h-screen items-center justify-center"};function m(t,o){const e=a("router-view");return _(),r("div",l,[s(e)])}const d=i(f,[["render",m]]);export{d as default};
